@@ -325,6 +325,8 @@ button {
 }
 
 .title-form {
+    display: inline-block;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -335,11 +337,10 @@ button {
 }
 
 .form-subscription {
-    display: flex;
-    margin-top: 20px;
+    display: flex;   
 }
 
-.input-subscriber-email {
+.form-subscription__input {
     margin-right: 12px;
     padding-left: 16px;
     width: 358px;
@@ -351,7 +352,7 @@ button {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.input-subscriber-email::placeholder {
+.form-subscription__input::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -376,7 +377,7 @@ button {
     transition: background-color 250ms var(--transition-cubic-bezier);
 }
 
-.subscription-sumbit-icon {
+.subscription-sumbit__icon {
     margin-left: 10px;
 }
 
@@ -622,7 +623,7 @@ button {
     transition: transform 250ms var(--transition-cubic-bezier);
 }
 
-.close-btn {
+.modal-close-btn {
     display: flex;
     position: absolute;
     top: 8px;
@@ -637,8 +638,8 @@ button {
     transition: fill 250ms var(--transition-cubic-bezier);
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
     fill: var(--accent-color);
 }
 
@@ -829,7 +830,7 @@ button {
     margin-bottom: 50px;   
 }
 
-.filter-button {
+.portfolio-filter__button {
     padding: 6px 22px;
     font-style: normal;
     font-weight: 500;
@@ -843,8 +844,8 @@ button {
 
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.portfolio-filter__button:hover,
+.portfolio-filter__button:focus {
     background-color: var(--accent-color);
     color: var(--white-color-text);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -856,22 +857,22 @@ button {
     gap: 30px;
 }
 
-.portfolio-card {
+.portfolio-list__item {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-card-link {
+.product-cart__link {
     display: inline-block;
     transition: box-shadow 250ms var(--transition-cubic-bezier);
 }
 
-.card-thumb {
+.product-cart__thumb {
     display: flex;
     position: relative;
     overflow: hidden;
 }
 
-.card-overlay {
+.product-cart__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -880,7 +881,7 @@ button {
     transition: transform 250ms var(--transition-cubic-bezier);
 }
 
-.card-discr {
+.product-cart__label {
     position: absolute;
     min-width: 322px;
     font-size: 18px;
@@ -892,17 +893,17 @@ button {
     transform: translate(-50%, -50%);
 }
 
-.portfolio-card-link:hover,
-.portfolio-card-link:focus {
+.product-cart__link:hover,
+.product-cart__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-card-link:hover .card-overlay,
-.portfolio-card-link:focus .card-overlay {
+.product-cart__link:hover .product-cart__overlay,
+.product-cart__link:focus .product-cart__overlay {
     transform: translateY(0);
 }
 
-.portfolio-list .title {
+.product-cart__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -911,14 +912,14 @@ button {
     color: var(--main-color-text);
 }
 
-.portfolio-list .text {
+.product-cart__text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
 }
 
-.portfolio-card-bottom {
+.product-cart__discr {
     padding: 20px 24px;
     border-left: 1px solid var(--card-border-color);
     border-right: 1px solid var(--card-border-color);
