@@ -903,7 +903,14 @@ button {
     transform: translateY(0);
 }
 
-.product-cart__title {
+.product-cart__meta {
+    padding: 20px 24px;
+    border-left: 1px solid var(--card-border-color);
+    border-right: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--card-border-color);
+}
+
+.product-cart__name {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -912,16 +919,9 @@ button {
     color: var(--main-color-text);
 }
 
-.product-cart__text {
+.product-cart__discr {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
-}
-
-.product-cart__discr {
-    padding: 20px 24px;
-    border-left: 1px solid var(--card-border-color);
-    border-right: 1px solid var(--card-border-color);
-    border-bottom: 1px solid var(--card-border-color);
 }
