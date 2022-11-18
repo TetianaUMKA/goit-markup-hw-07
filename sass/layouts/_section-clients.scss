@@ -17,21 +17,21 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
-    transition: border-color 250ms var(--transition-cubic-bezier);
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .clients-list__icon {
     fill: #AFB1B8;
 
-    transition: fill 250ms var(--transition-cubic-bezier);
-}
+    @include transition(fill);
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-list__link:hover .clients-list__icon,
-.clients-list__link:focus .clients-list__icon {
-    fill: var(--accent-color);
+    .clients-list__link:hover &,
+    .clients-list__link:focus & {
+        fill: var(--accent-color);
+    }
 }
