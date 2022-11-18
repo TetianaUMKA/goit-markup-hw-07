@@ -18,23 +18,23 @@
     background-color: #FFFFFF;
     border-radius: 50%;
 
-    transition: background-color 250ms var(--transition-cubic-bezier);
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .socials-list__icon--bicolor {
     fill: #AFB1B8;
 
-    transition: fill 250ms var(--transition-cubic-bezier);
-}
+    @include transition(fill);
 
-.socials-list__link:hover,
-.socials-list__link:focus {
-    background-color: var(--accent-color);
-}
-
-.socials-list__link:hover .socials-list__icon--bicolor,
-.socials-list__link:focus .socials-list__icon--bicolor {
-    fill: var(--white-color-text);
+    .socials-list__link:hover &,
+    .socials-list__link:focus & {
+        fill: var(--white-color-text);
+    }
 }
 
 .socials-list__link--dark {
