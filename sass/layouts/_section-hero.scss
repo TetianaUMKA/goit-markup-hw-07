@@ -35,10 +35,11 @@
     background-color: var(--accent-color);
     color: var(--white-color-text);
 
-    transition: background-color 250ms var(--transition-cubic-bezier);
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--active-button);
+    }
 }
 
-.section-hero__button:hover,
-.section-hero__button:focus {
-    background-color: var(--active-button);
-}
