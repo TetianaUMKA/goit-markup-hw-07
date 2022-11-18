@@ -21,10 +21,10 @@
 .header__item {
     position: relative;
     margin-right: 50px;
-}
 
-.header__item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .header__link {
@@ -38,12 +38,12 @@
     letter-spacing: 0.02em;
     color: var(--logo-color-text);
 
-    transition: color 250ms var(--transition-cubic-bezier);
-}
+    @include transition(color);
 
-.header__link:hover,
-.header__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .header__link--active {
@@ -81,22 +81,22 @@
     letter-spacing: 0.02em;
     color: var(--secondary-color-text);
 
-    transition: color 250ms var(--transition-cubic-bezier);
-}
+    @include transition(color);
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .header-contacts__icon {
     margin-right: 10px;
     fill: var(--secondary-color-text);
 
-    transition: fill 250ms var(--transition-cubic-bezier);
-}
+    @include transition(fill);
 
-.header-contacts__link:hover .header-contacts__icon,
-.header-contacts__link:focus .header-contacts__icon {
-    fill: var(--accent-color);
+    .header-contacts__link:hover &,
+    .header-contacts__link:focus & {
+        fill: var(--accent-color);
+    }
 }
