@@ -490,7 +490,7 @@ button {
 }
 
 .presentation-list__item {
-   flex-basis: calc((100% - 60) / 3);
+   flex-basis: calc((100% - 60px) / 3);
    position: relative;
 }
 
@@ -524,7 +524,7 @@ button {
 }
 
 .team-list__item {
-    flex-basis: calc((100% - 90) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--main-color-bg);
@@ -560,7 +560,7 @@ button {
     gap: 30px;
 }
 .clients-list__logo {
-    flex-basis: calc((100% -150px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
     height: 92px;
 }
 .clients-list__link {
