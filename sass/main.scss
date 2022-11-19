@@ -1,21 +1,4 @@
-
-@import './utils/variables';
-@import './base/reset';
-@import './utils/placeholders';
-@import './utils/mixins';
-@import './base/common';
-@import './utils/visually-hidden';
-
-@import './components/logo';
-@import './components/socials';
-@import './components/modal';
-@import './components/product-card';
-@import './components/header';
-@import './components/footer';
-
-@import './layouts/section-hero';
-@import './layouts/section-features';
-@import './layouts/section-presentation';
-@import './layouts/section-team';
-@import './layouts/section-clients';
-@import './layouts/section-portfolio';
+@import './base/module';
+@import './utils/module';
+@import './components/module';
+@import './layouts/module';
