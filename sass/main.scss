@@ -1,11 +1,3 @@
-// utils
-@import './utils/module';
-//base
-@import './base/module';
-// components
-@import './components/module';
-//layouts
-@import './layouts/module';
 
 @import './utils/variables';
 @import './base/reset';
@@ -18,9 +10,9 @@
 @import './components/socials';
 @import './components/modal';
 @import './components/product-card';
+@import './components/header';
+@import './components/footer';
 
-@import './layouts/header';
-@import './layouts/footer';
 @import './layouts/section-hero';
 @import './layouts/section-features';
 @import './layouts/section-presentation';
